@@ -4,9 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class ="header__logo_text"><h1 class="header__logo_text_h1">IC "Repair Design Project"</h1></div>
+        <div class="header__nav"> <div class="header__nav_element">HOME</div>
+                                  <div class="header__nav_element">PROJECTS</div>
+                                  <div class="header__nav_element">MEASUREMENT</div>
+                                  <div class="header__nav_element">TEAM</div>
+                                  <div class="header__nav_element">REVIEWS</div>
+                                  <div class="header__nav_element">CONTACTS</div>   
+        </div>
+        <div class="header__tel"><a href="tel:+79287683239">+7 (928) 768-32-39</a></div>
+        <div class="header__but"><button>Request a call</button></div>
+    </header>
+    <main class="main">
+        <div class="main__section1">
+            <div class="main__section1_instagram"><a href="https://www.instagram.com">instagram</a></div>
+            <div class="main__section1_bg_photo">
+                <div class="main__section1_bg_photo-black">
+                        <div class="section1_text-big">
+                            <span class="section1_text-big-white">Turnkey Repair in the<br> city of </span><span class="section1_text-big-gold">Rostov-on-Don</span></div>
+                        <div class="section1_text-small">Get ready-made turnkey repairs on time<br>
+                            with work time saving up to 45 days and 20% from<br>
+                            cost of materials due to the organization of work</div>
+                        <div class="section1_button">
+                            <button class="section1_button-first">CALCULATE THE COST</button>
+                            <button class="section1_button-second">SUBMIT YOUR APPLICATION</button>
+                        </div>
+                </div> 
+            </div>
+            <div class="scroll"><a href="#">Scroll down </a><a href="#"><img src="assets/images/scroll.svg" alt="scroll"></a></div>
+        </div>
+        <div class="main__section2">
+            <div class="main__section2_text">
+                <div class="main__section2_text-gold">Completed projects</div>
+                <div class="main__section2_text-small">Only a small part of the work performed by our company is presented on the site.
+                        For 14 years on in the construction 
+                        market we have made happy more than 1000 families</div>
+                <div class="main_section2_flex">    
+                    <div>
+                        <div>
+                            <div class="main__section2_text-gold_small"><span>City:</span></div>
+                            <div class="main__section2_text-white_small">Rostov-on-Don<br> LCD admiral</div>   
+                        </div>
+                        <div>
+                            <div class="main__section2_text-gold_small">Repair time:</div>
+                            <div class="main__section2_text-white_small">3.5 months</div>
+                        </div> 
+                    </div>
+                    <div>
+                        <div>
+                            <div class="main__section2_text-gold_small">apartment area:</div>
+                            <div class="main__section2_text-white_small">81 m2</div>
+                        </div>  
+                        <div>
+                            <div class="main__section2_text-gold_small main__section2-padding">Repair Cost:</div>
+                            <div class="main__section2_text-white_small">Upon request</div>
+                        </div> 
+                    </div>
+                </div>
+                <div class="main__section2_slider">
+                    <img src="assets/images/left.png" alt="left">
+                    <div class="main_section2_circles">
+                        <div class="main__section2_circle"></div>
+                        <div class="main__section2_circle"></div>
+                        <div class="main__section2_circle"></div> 
+                    </div>
+                    <img src="assets/images/right.png" alt="right">
+                </div>                  
+            </div>
+            <div class="main__section2_nav">
+                <div>Rostov-on-Don, Admiral</div>
+                <div>Sochi Thieves</div>
+                <div>Rostov-on-Don Patriotic</div>
+            </div>
+            <div class="main__section2_img">
+                <img src="assets/images/1.png" alt="room">
+                <img src="assets/images/2.png" alt="room">
+                <div class="main__section2_img-circle"><span><img src="assets/images/right2.png" alt="right"></span></div>
+            </div>
+        </div>
+        <div class="main__section3">
+                <div class="main_section3-text">online control<div class="main_section3-img"><img src="assets/images/video.png" alt="video"></div></div>
+                <div class="main_section3-youtube"><iframe width="817" height="434" src="https://www.youtube.com/embed/lJIrF4YjHfQ" frameborder="0" allow="accelerometer; autoplay; 
+                encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </div>
+        <div class="main__section4">
+            <div class="main__section4-text">At each facility, a camera is installed that broadcasts the progress of work on the clock. 
+                    At any time, you can go to our website and monitor the progress of work in your apartment. 
+                    You can watch the live broadcast from one of our facilities!
+                    Leave a request below and you will receive a link to the broadcast.
+            </div>
+            <div class="main__section4_line"></div>
+            <div class="main__section4_form">
+                <form class="main__section4_form-flex" action="">
+                    <div>
+                        <span class="main__section4_form-text">Name</span>
+                        <div><input type="text" name="name" id="" placeholder="What's is your name"></div>
+                    </div>
+                    <div>
+                        <span class="main__section4_form-text">Phone</span>
+                        <div><input type="tel" name="number" id="" placeholder="Your phone number"></div>
+                    </div>
+                    <input type="submit" name="submit" id="" value="Submit">
+                </form> 
+                <div class="main__section4_checkbox-text">
+                    <input type="checkbox" checked>I agree to the processing of personal data
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 </html>

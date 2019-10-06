@@ -1,3 +1,495 @@
 body{
-    background: red;
+    max-width:1440px;
+    margin: 0 auto;
+}
+
+
+.header {
+    height: 85px;
+    background: #131313;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &__logo_text{
+        &_h1{
+        font-family: FuturaDemiC, Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #E3B873;
+        }
+    }
+    
+    &__nav{
+        display: flex;
+        width: 581px;
+        justify-content: space-around;
+        &_element{
+            font-family: FuturaBookC, 'Lucida Sans', Verdana, sans-serif;
+            font-size: 14px;
+            line-height: 16px;
+            color: #FFFFFF;
+            &:hover{
+                cursor: pointer;
+                color:#E3B873;
+            }
+        }
+    }
+
+    &__tel{
+        a{
+            font-family: FuturaDemiC, Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: right;
+            text-decoration-line: underline;
+            color: #E3B873;
+        }
+    }
+
+    &__but{
+        button{
+            font-family: FuturaDemiC, Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            line-height: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            background: #E3B873;
+            box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+            border-radius: 2px;
+            border: 0;
+            height: 37px;
+            width: 167px;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        button:active{
+            color:black;
+            background: gray;
+        }
+    }
+}
+
+.main{
+    width: 100%;
+    height: 707px;
+    background: #131313;
+
+    &__section1{
+        position: relative;
+        width: 100%;
+        height: 707px;
+        
+        &_bg_photo-black{
+            width: 100%;
+            height: 707px;
+            background: rgba(0, 0, 0, 0.7); 
+        }
+
+        &_instagram{
+                a{
+                font-family: FuturaDemiC, Arial, Helvetica, sans-serif;
+                font-size: 14px;
+                line-height: 82px;
+                text-align: center;
+                text-transform: uppercase;
+                transform: rotate(90deg);
+                color: #E3B873;
+                height: 82px;
+                width: 707px;
+                left: -313px;
+                position: absolute;
+                top:273px;
+                text-decoration: none;
+                 &::after{
+                    background-color: #E3B873;
+                    content: "";
+                    display: inline-block;
+                    height: 1.5px;
+                    vertical-align: middle;
+                    width: 45px;
+                    margin-left: 15px;
+                }
+            }
+        }
+
+        &_bg_photo{
+            background:url("assets/images/bg_section1.png");
+            width: calc(100% - 84px);
+            height: 707px;
+            margin-left: 84px;
+        }
+    }
+}
+
+.section1_text-big{
+    padding:196px 0 0 61px;
+    width: 676px;
+    font-family: Yeseva One, Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    line-height: 53.13px;
+    line-height: 115%;
+    text-align: left;
+    vertical-align: top;
+    text-transform: uppercase;
+    &-white{
+        color:white;
+    }
+    &-gold{
+        color: #E3B873
+    }
+}
+
+.section1_text-small{
+    font-family: FuturaBookC, 'Lucida Sans', Verdana, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    vertical-align: top;
+    color:#FFFFFF;
+    width: 676px;
+    padding:19px 0 0 61px;
+    line-height: 1.8;
+}
+
+.section1_button{
+    padding-left:61px;
+    padding-top:41px;
+
+    &-first {
+        background: #E3B873;
+        border-radius: 2px;
+        width: 207px;
+        height: 51px;
+        font-size: 13px;
+        line-height: 15px;
+        color: #FFFFFF;
+        text-align: center;
+        font-family: FuturaDemiC, Arial, Helvetica, sans-serif;
+        border: 0;
+        margin-right: 20px;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        &:active{
+            color:black;
+            background: gray;
+        }
+      }
+
+      &-second {
+        background: rgba(0, 0, 0, 0);  
+        border: 1px solid #FFFFFF;
+        color: #FFFFFF;
+        border-radius: 2px;
+        width: 207px;
+        height: 51px;
+        font-family: FuturaDemiC, Arial, Helvetica, sans-serif;
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        &:hover{
+            cursor: pointer;
+        }
+        &:active{
+            color:#131313;
+            background: #E3B873;
+        }
+      }
+}
+ 
+
+.scroll{
+    bottom:-48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: #131313;
+    width: 247px;
+    height: 97px;;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    text-align: center;
+    a{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    img{
+        padding-left:12px;
+    }
+  }
+
+.main__section2{
+    width: 100%;
+    height: 1074px;
+    background:#131313;
+    background-image: url("assets/images/whiteline.png");
+    overflow: hidden;
+    
+}
+
+.main__section2_text{
+    width: 442px;
+}
+
+.main__section2_text-gold{
+    width: 253px;
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: #E3B873;
+    padding: 176px 0 0 101px;
+    &:after{
+        background-color: #E3B873;
+        content: "";
+        display: inline-block;
+        height: 1.5px;
+        vertical-align: middle;
+        width: 87px;
+        margin-left: 52px;
+    }
+}
+
+.main__section2_text-small{
+    font-family: FuturaBookC;
+    font-size: 18px;
+    line-height: 29px;
+    color: #FFFFFF;
+    padding: 34px 0 0 101px;
+    width: 442px;
+}
+
+.main__section2_text-gold_small{
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #E3B873;
+    padding: 42px 0 0 101px;
+    width: 165px;
+}
+
+.main__section2-padding{
+    padding-top:62px;
+}
+
+.main__section2_text-white_small{  
+    font-family: FuturaBookC;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    width: 120px;
+    padding:9px 0 0 101px;
+}
+
+.main_section2_flex{
+    display: flex;
+}
+
+.main__section2_circle{
+    width: 10px;
+    height: 10px;
+    border-radius:50%;
+    background: gray;
+    &:hover{
+        background: white;
+        cursor: pointer;
+    }
+}
+
+.main__section2_slider{
+    display: flex;
+    width: 206px;
+    height: 13px;
+    justify-content: space-between;
+    padding: 80px 0 0 101px;
+    img:hover{
+        cursor: pointer;
+    }
+}
+
+.main_section2_circles{
+    display: flex;
+    width: 64px;
+    justify-content: space-between;
+}
+
+.main__section2_nav{
+    position: relative;
+    left:593px;
+    bottom: 566px;
+    height: 24px;
+    width: 623px;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    & div:first-child{
+        color:#E3B873;
+    }
+    text-decoration: none;
+    color:gray;
+    div:hover{
+        color:#E3B873;
+        cursor: pointer;
+   }
+}
+
+.main__section2_img{
+    position: relative;
+    left:593px;
+    bottom: 521px;  
+    [alt=room]{
+        padding-right:21px; 
+    }
+}
+
+.main__section2_img-circle{
+    position: absolute;
+    left:750px;
+    top:206px;
+    background: #E3B873;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    &:hover{
+        cursor: pointer;
+        background: green;
+    }
+}
+
+.main_section3-text{
+    font-family: Yeseva One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase; 
+    color: white;
+    margin-top:-323px;
+}
+
+.main_section3-img{
+    margin-top:13px; 
+    &:after, &:before{
+        content: "";
+        background-color: #E3B873;
+        display: inline-block;
+        height: 1.5px;
+        vertical-align: middle;
+        width: 32px;
+        margin:0 8px; 
+}
+}
+
+.main_section3-youtube{
+    margin-top:31px;
+    margin-left:311px;
+}
+
+.main__section4{
+    position: relative;
+    margin-top: -268px;
+    width: 100%;
+    height: 2663px;
+    background: url(assets/images/bg4.png)
+}
+
+.main__section4-text{
+    font-family: FuturaBookC;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    color: #363636;
+    width: 681px;
+    padding-top:372px;
+    margin: auto;
+}
+
+.main__section4_line{
+    position:absolute;
+    top:336px;
+    left:47%;
+    &::after{
+    content: "";
+    background-color: #E3B873;
+    display: inline-block;
+    height: 2px;
+    vertical-align: middle;
+    width: 55px; 
+    }
+}
+
+.main__section4_form-text{
+    font-family: FuturaBookC;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(54, 54, 54, 0.5);
+}
+
+.main__section4_form{
+    input{
+        font-family: FuturaBookC;
+        font-size: 18px;
+        line-height: 24px;
+        color: #363636;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-bottom:1 solid black;
+        background: none;
+    }
+    input[type=submit]{
+        background: #E3B873;
+        border-radius: 2px;
+        border: 0;
+        font-family: FuturaDemiC;
+        font-size: 15px;
+        line-height: 26px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        height: 51px;
+        width: 200px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.main__section4_form-flex{
+    display: flex;
+    justify-content: space-around;
+    margin:91px auto 0;
+    width:770px;
+}
+
+.main__section4_checkbox-text{
+    font-family: FuturaBookC;
+    font-size: 16px;
+    line-height: 22px;
+    color: #181818;
+    margin:33px auto 0;
+    width: 286px;
+    height: 18px;
+    input[type="checkbox"]{
+        margin-right: 5px;
+    }
 }
