@@ -569,6 +569,9 @@ main{
     width: 36px;
     height: 36px;
     border-radius: 50%;
+    &:hover{
+        cursor: pointer;
+    }
     background: #E3B873;
     position: absolute;
     @media screen and(max-width:850px){
@@ -1240,6 +1243,9 @@ main{
     border-radius: 50%;
     background: #E3B873;
     position: absolute;
+    &:hover{
+        cursor: pointer;
+    }
     @media screen and(max-width:580px){
         display: inline-block;
     }

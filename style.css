@@ -709,6 +709,10 @@ main {
   position: absolute;
 }
 
+.main__section2_circle-first:hover, .main__section2_circle-second:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 850px) {
   .main__section2_circle-first, .main__section2_circle-second {
     display: inline-block;
@@ -1575,6 +1579,10 @@ main {
   border-radius: 50%;
   background: #E3B873;
   position: absolute;
+}
+
+.main__section7_circle-first:hover, .main__section7_circle-second:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 580px) {
