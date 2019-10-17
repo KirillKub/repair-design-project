@@ -679,6 +679,9 @@ main{
     height: 2663px;
     background: url(assets/images/bg4.png);
     overflow: hidden;
+    @media screen  and(max-width:1200px) {
+        height: auto;
+    }
     @media screen and(max-width:760px){
         background-image: none;
         height: auto;
@@ -1488,7 +1491,7 @@ img[alt="room3(bg8)"] + .box-item__text{
         top:0;
         background-image: none;
         background: #181818;
-        height: 2260px;
+        height: auto;
 
     }
 }
@@ -1933,6 +1936,7 @@ img[alt="room3(bg8)"] + .box-item__text{
         background-image: none;
         background: #181818;
         height:auto;
+        top:0;
 }
     margin:0 auto;
     position: relative;
@@ -2073,9 +2077,10 @@ img[alt="room3(bg8)"] + .box-item__text{
     @media screen and(max-width:930px){
         font-size: 18px;
         line-height: 25px;
+        margin-top:20px;
     }
     @media screen and(max-width:375px){
-        margin-top: 0;
+        margin-top: 200px;
     }
 }
 
@@ -2112,7 +2117,7 @@ img[alt="room3(bg8)"] + .box-item__text{
     @media screen and(max-width:375px){
         img{
             position: absolute;
-            bottom: 240px;
+            bottom: 210px;
             left:2%;
         }
     }
