@@ -22,45 +22,6 @@
   font-family: "Proxima Nova";
   src: url("assets/fonts/ProximaNova-Regular.eot") format("eot"), url("assets/fonts/ProximaNova-Regular.woff") format("woff"), url("assets/fonts/ProximaNova-Regular.ttf") format("truetype");
 }
- 
-@media screen and (max-width:375px){
-  .main__section11{
-    position: relative;
-    z-index: 101;
-  }
-}
-
-.iframe iframe{
-	width: 375px;
-	height: 9130px;
-} 
-
-.iframe iframe button{
-  background: red;
-}
-
-.hidden{
-	display: none;
-}
-
-.iframe{
-	display: flex;
-  justify-content: center;
-}
-
-.buttons{
-	position: fixed;
-	bottom	:15px;
-	right: 15px;
-	z-index: 100;
-}
-
-.buttons button{
-	height: 30px;
-	width: 100px;
-	border: 1px solid black;
-	background: gray;
-}
 
 body {
   max-width: 1440px;

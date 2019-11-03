@@ -9,7 +9,6 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="all">
     <header class="header">
         <div class ="header__logo_text"><h1 class="header__logo_text_h1">IC "Repair Design Project"</h1></div>
         <div class="header__nav"> <div class="header__nav_element header__nav_first">HOME</div>
@@ -438,7 +437,6 @@
             <div class="main__section11_map"><div><img src="assets/images/map.png" alt="map"></div></div>    
         </div>
     </main>
-    
     <footer class="footer">
             <div class ="footer__logo_text"><p class="footer__logo_text_p">IC "Repair Design Project"</p></div>
             <div class="footer__nav"> <div class="footer__nav_element footer__nav_first">HOME</div>
@@ -451,25 +449,5 @@
             <div class="footer__tel"><a href="tel:+79287683239">+7 (928) 768-32-39</a></div>
             <div class="footer__but"><button>Request a call</button></div>
     </footer>
-</div>
-    <div class="iframe"><iframe class="hidden" src="index.html" id='frame'></iframe></div>
-    <div class="buttons" id="buttons">
-            <div><button id="mobile">MOBILE</button></div>
-            <div><button id="back">BACK</button></div>
-    </div>	
-    <script>
-            document.getElementById('back').onclick = function(){
-                document.getElementById('frame')
-                document.location.href = '../../index.html'
-            }
-            document.getElementById('mobile').onclick = function(){
-			    document.getElementById('frame').classList.toggle('hidden');
-                document.getElementById('all').classList.toggle('hidden');
-                if(document.getElementById('mobile').innerHTML == "DESKTOP")
-				document.getElementById('mobile').innerHTML = 'MOBILE';
-			    else document.getElementById('mobile').innerHTML = "DESKTOP"
-            }
-        
-    </script>
 </body>
 </html>
